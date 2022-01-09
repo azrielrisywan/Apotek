@@ -35,4 +35,8 @@ Route::get('obat', function () {
     return view('obat');
 })->middleware(['auth'])->name('obat');
 
+Route::get('transaksi', function () {
+    return view('transaksi');
+})->middleware(['auth'])->name('transaksi');
+
 require __DIR__.'/auth.php';
